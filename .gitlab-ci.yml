@@ -5,6 +5,10 @@ variables:
   LC_ALL: C.UTF-8
   BUNDLE_PATH: ./vendor/bundle
 
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - vendor/
 
 before_script:
   - bundle install
@@ -28,6 +32,6 @@ pages:
     - public
   environment:
     name: gitlab-pages
-    url: https://status.bitnp.net
+    url: http://status.bitnp.net
   only:
   - master

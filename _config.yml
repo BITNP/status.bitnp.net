@@ -1,12 +1,12 @@
-url: https://staticus.narro.co
-author: NarroApp
-email: support@narro.co
-title: Staticus
-description: The status page for the Narro API and services
-homepage: https://www.narro.co
+url: https://status.bitnp.net
+author: BITNP
+email: webmaster@bitnp.net
+title: BITNP 服务状态
+description: BITNP 网站服务状态信息
+homepage: https://www.bitnp.net
 
 permalink: pretty
-uptime_days: 60
+uptime_days: 14
 
 # TODO: Build pagination into archive
 gems: [jekyll-paginate]
