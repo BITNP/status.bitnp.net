@@ -8,6 +8,8 @@ homepage: https://www.bitnp.net
 permalink: pretty
 uptime_days: 14
 
+timezone:	Asia/Shanghai
+
 # TODO: Build pagination into archive
 gems: [jekyll-paginate]
 paginate: 2
