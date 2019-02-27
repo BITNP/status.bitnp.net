@@ -15,7 +15,8 @@ gems: [jekyll-paginate]
 paginate: 2
 paginate_path: '/archive/page:num/'
 
-include: [".well-known/"]
+include: [".well-known"]
+keep_files: [".well-known"]
 
 defaults:
   -
