@@ -42,19 +42,22 @@ layout: default
     </div>
     <hr/>
     {% for post in site.tags[tag.slug] limit:1 %}
-        <p class="{{ post.action }}">
+        <div class="{{ post.action }}">
             {% if post.action contains 'incident' %}
                 <h3 class="{{ post.action }}">
                     <a href="{{ post.url }}">
                         {{ post.title }}
                     </a>
                 </h3>
+                <div class="content">
+                    {{ post.content }}
+                </div>
             {% else %}
                 <h3 class="resolved">
                     No known issues at this time.
                 </h3>
             {% endif %}
-        </p>
+        </div>
     {% endfor %}
 </div>
 {% endif %}
