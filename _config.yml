@@ -11,11 +11,11 @@ uptime_days: 14
 timezone:	Asia/Shanghai
 
 # TODO: Build pagination into archive
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 paginate: 2
 paginate_path: '/archive/page:num/'
 
-include: [".well-known/acme-challenge/_*"]
+include: [".well-known/acme-challenge/_kqkBDtb0XV0ep4Ihuii4h5yDWEyZ1IZQgNQ8DDv5_I"]
 
 defaults:
   -
