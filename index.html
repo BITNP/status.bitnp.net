@@ -55,7 +55,7 @@ layout: default
 {% if tag.system %}
 <div class="index-system">
     {% assign post = site.tags[tag.slug][0] %}{% if post.action contains 'incident' %}
-    {% else %}{% post = nil %}{% endif %}
+    {% else %}{% assign post = nil %}{% endif %}
     <div class="index-heading">
         <h2 class="{{ post.action }}">
             {{ tag.name }}
