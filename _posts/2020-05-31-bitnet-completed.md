@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 校园网网络维护 - 已完成
-action: incident-warning
+action: resolved
 date: 2020-05-31 04:00:00 +0800
 tags: [mirror, maintenance, infrastructure]
 ---
