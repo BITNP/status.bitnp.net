@@ -26,25 +26,23 @@ layout: default
 {% for tag in site.data.tags %}
 {% if tag.scheduled %}
 <div class="posts">
-    {% for post in site.tags[tag.slug] %}
-        {% if post.action contains 'resolve' %}
-        {% else %}
-            <div class="post {{ post.action }}">
-                <h3>
-                    <span class="tags">
-                        <span class="tag {{ tag.slug }}">
-                            {{ tag.name }}
-                        </span>
+    {% assign post = site.tags[tag.slug][0] %}{% if post.action contains 'resolve' %}{% assign post = nil %}{% endif %}
+    {% if post %}
+        <div class="post {{ post.action }}">
+            <h3>
+                <span class="tags">
+                    <span class="tag {{ tag.slug }}">
+                        {{ tag.name }}
                     </span>
-                    <a href="{{ post.url }}">
-                        {{ post.title }}
-                    </a>
-                </h3>
-                <div class="content">
-                    {{ post.content }}
-                </div>
+                </span>
+                <a href="{{ post.url }}">
+                    {{ post.title }}
+                </a>
+            </h3>
+            <div class="content">
+                {{ post.content }}
             </div>
-        {% endif %}
+        </div>
     {% endfor %}
 </div>
 {% endif %}
