@@ -98,7 +98,7 @@ layout: default
 
 <div class="index-heading">
     <h2>
-        Past Incidents
+        Past Events
     </h2>
     <a href="/archive">
         View Archive
@@ -106,7 +106,7 @@ layout: default
 </div>
 <hr/>
 <div id="posts"  class="posts">
-    {% for post in site.posts limit:3 %}
+    {% for post in site.posts limit:6 %}
     <div class="post {{ post.action }}">
         <h3>
             <a href="{{ post.url }}">
