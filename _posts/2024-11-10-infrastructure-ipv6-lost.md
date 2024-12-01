@@ -2,7 +2,7 @@
 layout: post
 title: 受网络拓扑更改影响网协IPV6暂时不可用
 action: incident-warning
-date: 2024-11-10 18:40:00 +0800
+date: 2024-11-10 18:40:01 +0800
 tags: [infrastructure]
 ---
 
